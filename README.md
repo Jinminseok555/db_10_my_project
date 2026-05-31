@@ -1,60 +1,22 @@
-# 데이터베이스 2026
+# 🥗 자취생 냉장고 식재료 매니저 (Fresh Jachi Fridge)
 
-# 아키텍처 설계
-
-https://nano5.notion.site/355daf211d42807e8f60ca7eca521f69?source=copy_link
-
+대학생 자취생들을 위한 스마트 식재료 유통기한 관리 및 레시피 추천 시스템입니다. 
+냉장고에 있는 재료를 효율적으로 관리하고, 유통기한 임박 재료를 활용한 최적의 레시피를 추천받아 식비 절감과 건강한 식생활을 돕습니다.
 
 ---
 
-# 🚀 db_04_my_assets
+## 🛠️ 주요 기능
+- **냉장고 재료 관리**: 식재료 추가, 수량 수정, 유통기한 관리
+- **레시피 탐색**: 조리 시간, 난이도별 맞춤 레시피 조회
+- **해먹기 매칭**: 현재 냉장고 재료로 즉시 만들 수 있는 요리 추천
+- **상황별 모드**: 시험기간(간편식), 종강(요리) 등 상황에 따른 추천 알고리즘
 
-아키텍처 설계를 학습하기 위한 Flet 프로젝트
+---
 
-## 🛠️ uv 설치 (최초 1회)
-이미 설치되어 있다면 안해도 됨
+## 🏗️ 설치 및 실행 방법
 
-Windows에 설치
+### 1. uv 환경 설정 (최초 1회)
 ```bash
+# Windows
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-macOS/Linux에 설치
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-## 🏗️ 의존성 설치
-프로젝트 폴더에서 아래 명령어를 실행하면 `.venv` 생성되고 패키지 설치됨
-
-```bash
-uv sync
-```
-
-## ⚙️ .env 파일 생성
-프로젝트 폴더에 있는 .env.example 파일을 복사하여 .env 파일을 생성하고 패스워드 등 DBMS 연결 정보 입력
-
-```bash
-cp .env.example .env
-```
-
-## ▶️ 실행 및 핫 리로드 (Run & Hot Reload)
-
-실행
-
-```bash
-uv run flet run
-```
-
-핫 리로드
-
-```bash
-uv run flet run -r --ignore data/
-```
-
-문제가 있을 경우에는 web browser 모드로 실행
-
-```bash
-uv run flet run --web -r --ignore data/
-```
+powershell -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"
