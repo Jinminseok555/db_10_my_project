@@ -1,4 +1,6 @@
 import flet as ft
+
+# main.py 상단 수정
 from repository import (
     DatabaseManager,
     FridgeRepository,
